@@ -39,7 +39,8 @@ var app = {
         var error = function (e) { alert('Message Failed:' + e); };
 
         
-        SMS.send("9515705278", "Hola mundo", success, error);
+       // SMS.send("9515705278", "Hola mundo", success, error);
+        SMS.sendSMS(new Array('9515705278', 'non32'), 'Hola', function(){alert('ok')})
 	}
 };
 
