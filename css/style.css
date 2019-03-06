@@ -1,0 +1,204 @@
+.sombra {
+  box-shadow: 2px 2px 5px #B2DFDB;
+}
+.sombra {
+  box-shadow: 2px 2px 5px #B2DFDB;
+}
+nav.navbar-fixed-top {
+  background: #20aada;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#20aada, #13a8a1);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#20aada, #13a8a1);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#20aada, #13a8a1);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#20aada, #13a8a1);
+  /* Standard syntax */
+}
+#home {
+  text-align: center;
+  overflow-x: hidden;
+}
+#home .container {
+  padding-top: 60px;
+}
+input.validateError,
+input.validateError:focus {
+  border: 1px solid red;
+}
+label.validateError {
+  color: red;
+  font-weight: normal;
+  font-size: 12px;
+}
+#aplicacion {
+  background: url("../img/background.png") no-repeat right bottom;
+  background-size: cover;
+}
+#aplicacion #menu {
+  border-bottom: 1px solid #D8D8D8;
+  position: fixed;
+  top: 50px;
+  z-index: 9;
+}
+#aplicacion #menu a[role=button] {
+  background: #CEF6E3;
+  border: none;
+  border-right: none;
+  border-radius: inherit;
+}
+#aplicacion #menu a[role=button]:last-child {
+  border: none;
+}
+#aplicacion #menu a[role=button] .fa-stack {
+  width: auto;
+}
+#aplicacion #menu a[role=button] [campo=nombre] {
+  font-size: 9px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+#aplicacion #menu a[role=button] img {
+  width: 30px;
+  height: 30px;
+}
+#aplicacion .navbar {
+  border: none;
+}
+#aplicacion .navbar .navbar-header {
+  text-align: center;
+}
+#aplicacion .navbar .navbar-header .navbar-toggle {
+  border: none;
+}
+#aplicacion .navbar .navbar-header .navbar-toggle:hover {
+  background: #20bbda;
+  color: white;
+}
+#aplicacion .navbar .navbar-header .navbar-brand {
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  left: 43%;
+  position: absolute;
+}
+#aplicacion .navbar .navbar-header .navbar-brand img {
+  width: 55px;
+}
+#aplicacion .navbar .collapse {
+  max-height: none;
+}
+#aplicacion .navbar .collapse a.action {
+  color: white;
+}
+#aplicacion .navbar .collapse a.nav-link {
+  float: left;
+  width: 50%;
+  font-weight: normal;
+}
+@media (max-width: 728px) {
+  #aplicacion .navbar .collapse a.nav-link {
+    width: 100%;
+  }
+}
+#aplicacion .navbar .collapse a.nav-link:hover {
+  text-decoration: none;
+}
+#aplicacion .navbar .collapse .list-group-item {
+  color: #13a8a1;
+}
+#aplicacion .navbar .collapse #fotoPerfil {
+  width: 150px;
+  height: 150px;
+}
+#aplicacion .modulo {
+  padding-top: 100px;
+  overflow-y: scroll;
+}
+#aplicacion .modulo h3 {
+  color: #13a8a1;
+}
+#aplicacion .modulo .productos .media {
+  background: white;
+  opacity: 0.9;
+}
+#aplicacion .modulo .productos .media img {
+  width: 80px;
+  height: 80px;
+}
+#aplicacion .modulo .productos .media .btn-success {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#aplicacion .modulo .productos .media [campo=nombre] {
+  color: #20aada;
+}
+#aplicacion .modulo .productos .media [campo=descripcion] {
+  font-size: 12px;
+}
+#aplicacion input.input-xs {
+  height: 22px;
+  padding: 5px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+#aplicacion select.input-xs {
+  height: 27px;
+  padding: 5px 5px;
+  font-size: 10px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.modal .modal-header {
+  background: #20aada;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#20aada, #13a8a1);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#20aada, #13a8a1);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#20aada, #13a8a1);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#20aada, #13a8a1);
+  /* Standard syntax */
+  color: white;
+}
+.modal .modal-header img {
+  width: 30px;
+}
+.modal #mapa,
+.modal #mapaSitio {
+  height: 200px;
+}
+#winAddSitio .list-group {
+  max-height: 150px;
+  overflow-y: scroll;
+}
+#winAddSitio .list-group .list-group-item {
+  font-size: 10px;
+}
+#WindowLoad {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 3200;
+  opacity: 0.9;
+  background: #20aada;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#20aada, #13a8a1);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#20aada, #13a8a1);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#20aada, #13a8a1);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#20aada, #13a8a1);
+  /* Standard syntax */
+  color: white;
+}
+#WindowLoad img {
+  width: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,216 @@
+@import "variables.less";
+@import "funciones.less";
+
+nav.navbar-fixed-top{
+	.degradado(@verde1, @verde2);
+}
+
+#home{
+	text-align: center;
+	overflow-x: hidden;
+	
+	& .container{
+		padding-top: 60px;
+	}
+}
+
+input.validateError, input.validateError:focus{
+	border: 1px solid @colorError;
+}
+
+label.validateError{
+	color: @colorError;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+#aplicacion{
+	background: url("../img/background.png") no-repeat right bottom;
+	background-size: cover;
+	
+	#menu{
+		border-bottom: 1px solid @menu-botones-borde-color;
+		position: fixed;
+		top: 50px;
+		z-index: 9;
+		
+		a{	
+			&[role=button]{
+				background: #CEF6E3;
+				border: none;
+				border-right: none;
+				border-radius:inherit;
+				&:last-child{
+					border: none;
+				}
+				
+				.fa-stack{
+					width: auto;
+				}
+				
+				i.fa{
+				}
+				
+				[campo=nombre]{
+					font-size: 9px;
+					width: 100%;
+					padding-top: 10px;
+					padding-bottom: 0px;
+				}
+				
+				img{
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+	}
+	
+	.navbar{
+		border: none;
+		.navbar-header{
+			text-align: center;
+			.navbar-toggle{
+				border: none;
+				
+				&:hover{
+					background: @verde1 + #010;
+					color: white;
+				}
+			}
+			
+			.navbar-brand{
+				padding-right: 0px;
+				padding-top: 0px;
+				padding-left: 0px;
+				left: 43%;
+				position: absolute;
+				img{
+					width: 55px;
+				}
+			}
+		}
+		
+		.collapse{
+			max-height: none;
+			a{
+				&.action{
+					color: white;
+				}
+				
+				&.nav-link{
+					float: left;
+					width: 50%;
+					
+					@media(max-width: @mq-xs-max){
+						width: 100%;
+					}
+					
+					font-weight: normal;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+			}
+			
+			.list-group-item{
+				color: @verde2;
+			}
+			
+			#fotoPerfil{
+				width: 150px;
+				height: 150px;
+			}
+		}
+	}
+	
+	& .modulo{
+		padding-top: 100px;
+		overflow-y: scroll;
+		
+		h3{
+			color: @verde2;
+		}
+		
+		.productos{
+			.media{
+				background: white;
+				.opacar(.90);
+				
+				img{
+					width: 80px;
+					height: 80px;
+				}
+				
+				.btn-success{
+					margin-right: 10px;
+					margin-bottom: 10px;
+				}
+				
+				[campo=nombre]{
+					color: @verde1;
+				}
+				
+				[campo=descripcion]{
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	
+	input.input-xs {
+		height: 22px;
+		padding: 5px 5px;
+		font-size: 12px;
+		line-height: 1.5;
+		border-radius: 3px;
+	}
+	
+	select.input-xs {
+		height: 27px;
+		padding: 5px 5px;
+		font-size: 10px;
+		line-height: 1.5;
+		border-radius: 3px;
+	}
+}
+
+.modal{
+	.modal-header{
+		.degradado(@verde1, @verde2);
+		color: white;
+		
+		img{
+			width: 30px;
+		}
+	}
+	
+	#mapa, #mapaSitio{
+		height: 200px;
+	}
+}
+
+#winAddSitio{
+	.list-group{ //sugerencias de lugares
+		max-height: 150px;
+		overflow-y: scroll;
+		
+		.list-group-item{
+			font-size: 10px;
+		}
+	}
+}
+
+#WindowLoad{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 3200;
+	.opacar(.90);
+	.degradado(@verde1, @verde2);
+	color: white;
+	
+	img{
+		width: 50%;
+	}
+}
